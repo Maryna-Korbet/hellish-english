@@ -39,7 +39,7 @@
 }
 
 .current {
-  color: #2196f3;
+  color: #ff6b09;
 }
 
 ul {
@@ -55,6 +55,11 @@ a {
 
 address {
   font-style: normal;
+}
+
+section {
+  padding-left: 16px;
+  padding-right: 16px;
 }
 
 h1,
@@ -84,7 +89,6 @@ img {
 body {
   font-family: 'Montserrat', sans-serif;
   letter-spacing: 0.03em;
-  background-color: teal;
 }
 
 h1,
@@ -105,4 +109,14 @@ button {
   letter-spacing: 0.14em;
   text-align: center;
 }
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
 /*# sourceMappingURL=main.css.map */
