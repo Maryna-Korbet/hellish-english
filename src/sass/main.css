@@ -39,7 +39,7 @@
 }
 
 .current {
-  color: #2196f3;
+  color: #ff6b09;
 }
 
 ul {
@@ -55,6 +55,11 @@ a {
 
 address {
   font-style: normal;
+}
+
+section {
+  padding-left: 16px;
+  padding-right: 16px;
 }
 
 h1,
@@ -84,7 +89,6 @@ img {
 body {
   font-family: 'Montserrat', sans-serif;
   letter-spacing: 0.03em;
-  background-color: teal;
 }
 
 h1,
@@ -104,5 +108,44 @@ button {
   line-height: 17px;
   letter-spacing: 0.14em;
   text-align: center;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+          clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+
+@media screen and (min-width: 1680px) {
+  .container {
+    width: 1680px;
+  }
 }
 /*# sourceMappingURL=main.css.map */

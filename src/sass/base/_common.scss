@@ -6,7 +6,7 @@
   cursor: pointer;
 }
 .current {
-  color: #2196f3;
+  color: #ff6b09;
 }
 ul {
   list-style: none;
@@ -19,6 +19,10 @@ a {
 }
 address {
   font-style: normal;
+}
+section {
+  padding-left: 16px;
+  padding-right: 16px;
 }
 h1,
 h2,
@@ -44,7 +48,6 @@ img {
 body {
   font-family: 'Montserrat', sans-serif;
   letter-spacing: 0.03em;
-  background-color: #ffffff;
 }
 h1,
 h2 {
