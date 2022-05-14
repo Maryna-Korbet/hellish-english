@@ -1,0 +1,99 @@
+///--- для конопок нужно указать ширину в зависимости от секции ---///
+
+///--- с оранжевым bg color ---///
+
+@mixin modal-btn_theme-dark() {
+  font-family: 'Montserrat';
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.2;
+  text-align: center;
+  align-items: center;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--color-blackout);
+  background: var(--background-button);
+  box-shadow: -5px 21px 26px rgba(0, 0, 0, 0.04);
+  cursor: pointer;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 27px;
+  padding-bottom: 27px;
+}
+
+///--- кнопка на белом фоне/прозрачная в моб меню ---///
+
+@mixin modal-btn__theme_light() {
+  font-family: 'Montserrat';
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.2;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--background-button);
+  background: transparent;
+  box-shadow: -5px 21px 26px rgba(0, 0, 0, 0.04);
+  cursor: pointer;
+  margin-left: auto;
+  margin-right: auto;
+  border: 2px solid var(--background-button);
+  padding-top: 27px;
+  padding-bottom: 27px;
+}
+
+//-- h2 --//
+
+@mixin section-title() {
+  font-family: 'Montserrat';
+  font-weight: 800;
+  font-size: 46px;
+  line-height: 1.3;
+  letter-spacing: 0.03em;
+  text-align: center;
+  color: var(--background-dark-section);
+}
+
+//-- h2 для моб и планшетной версии--//
+
+// @media screen and (min-width: 768px) {
+//   .section-title {
+//     font-size: 20px;
+//     line-height: 1.3;
+//   }
+// }
+
+//---серый текст внутри секции ---//
+
+@mixin section-subtitle_color-grey() {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.5;
+  letter-spacing: 0.08em;
+  color: var(--color-secondary);
+}
+
+//---черный текст внутри секции ---//
+
+@mixin section-subtitle_color-black() {
+  font-family: 'Montserrat';
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.2;
+  letter-spacing: 0.06em;
+  color: var(--color-primary);
+}
+
+//---заголовки по типу h3 внутри секции ---//
+
+@mixin section-headline() {
+  font-family: 'Montserrat';
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.4;
+  letter-spacing: 0.08em;
+  color: var(--color-primary);
+}
