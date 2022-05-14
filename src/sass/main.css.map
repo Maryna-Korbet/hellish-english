@@ -7,7 +7,8 @@
         "base/_common.scss",
         "utils/_visually-hidden.scss",
         "base/_container.scss",
-        "utils/_variables.scss"
+        "utils/_variables.scss",
+        "layout/_program.scss"
     ],
     "names": [],
     "file": "main.css"
