@@ -1,0 +1,294 @@
+/* --------------START HERO-------------- */
+
+@media screen and (max-width:767px){
+    .hero {
+        background-image: url(../images/hero/background-mobile.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        // background-position: -64px, 0px;
+        background-color: #FFFFFF;
+        box-shadow: -5px 21px 26px rgba(0, 0, 0, 0.04);
+        padding-top: 89px;
+        padding-bottom: 60px;
+        max-width:1680px;
+        margin: 0 auto;
+        flex-grow: 1;
+    }
+
+
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+        .hero {
+            background-image: url(../images/hero/background-mobile@2x.png);
+        }
+    }
+}    
+
+@media screen and (min-width:768px){
+    .hero {
+        background-image: url(../images/hero/background-table.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: 50% 50%;
+        background-color: #FFFFFF;
+        box-shadow: -5px 21px 26px rgba(0, 0, 0, 0.04);
+        padding-top: 168px;
+        padding-bottom: 44px;
+        max-width:1680px;
+        margin: 0 auto;
+        flex-grow: 1;
+    }
+
+
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+        .hero {
+            background-image: url(../images/hero/background-table@2x.png);
+        }
+    }
+}    
+
+@media screen and (min-width:1680px){
+    .hero {
+        background-image: url(../images/hero/background-desktop.png);
+        background-color: #FFFFFF;
+        box-shadow: -5px 21px 26px rgba(0, 0, 0, 0.04);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: 50% 50%;
+        padding-top: 150px;
+        padding-bottom: 6px;
+        max-width:1680px;
+        margin: 0 auto;
+        flex-grow: 1;
+    }
+
+
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+        .hero {
+            background-image: url(../images/hero/background-desktop@2x.png);
+        }
+    }
+}    
+
+.main-title{
+    font-style: normal;
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 1.3;
+    letter-spacing: 0.03em;
+    color: #111518;
+    margin-bottom: 8px;
+}
+
+@media screen and (min-width: 768px){
+    .main-title{
+        font-size: 26px;
+    }
+}
+
+@media screen and (min-width: 1680px){
+    .main-title{
+        font-size: 58px;
+    }
+}
+
+.hero-container__grey-text{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.57;
+    color: #B9B9B9;
+}
+
+@media screen and (min-width: 1680px){
+    .hero-container__grey-text{
+        font-size: 20px;
+        line-height: 164.9%;
+    }
+}
+
+.hero-container__text{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.57;
+    align-items: center;
+    color: #111518;
+    margin-bottom: 40px;
+}
+
+@media screen and (min-width: 768px){
+    .hero-container__text{
+        margin-bottom: 48px;
+    }
+}
+
+@media screen and (min-width: 1680px){
+    .hero-container__text{
+        font-size: 20px;
+        line-height: 1.65;
+        display: flex;
+    }
+}
+
+.hero-container__text_orrange{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.57;
+    display: flex;
+    align-items: center;
+    color: #FF6B09;
+}
+
+@media screen and (min-width: 1680px){
+    .hero-container__text_orrange{
+        color: #111518;
+        font-size: 20px;
+        line-height: 1.65;
+    }
+}
+
+.hero-button{
+    background-color: #FF6B09;
+    cursor: pointer;
+    border: none;
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+
+@media screen and (min-width: 768px){
+    .hero-button{
+        width: 260px;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+}
+
+@media screen and (min-width: 1680px){
+    .hero-button{
+        width: 354px;
+        padding-left: 70px;
+        padding-right: 70px;
+        padding-top: 27px;
+        padding-bottom: 27px;
+    }
+}
+
+.hero-button__link{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 1.25;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+@media screen and (min-width: 1680px){
+    .hero-button__link{
+        font-size: 14px;
+        line-height: 1.21;
+    }
+}
+
+@media screen and (min-width: 768px){
+    .hero-container{
+        display: flex;     
+        margin-bottom: 44px;
+        justify-content: space-between;          
+    }
+}
+
+@media screen and (min-width: 1680px){
+    .hero-container{
+        margin-bottom: 6px; 
+        justify-content: space-between;         
+    }
+}
+
+.hero-container__title{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 40px;
+
+}
+
+@media screen and (min-width: 768px){
+    .hero-container__title{
+        margin-bottom: 0px;
+        width: 332px;
+    }
+}
+
+@media screen and (min-width: 1680px){
+    .hero-container__title{
+        margin-top: 40px;
+        margin-bottom: 0px;
+        width: 560px;
+    }
+}
+
+.hero-container__img{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    min-height: 178px;
+}
+
+@media screen and (min-width: 768px){
+    .hero-container__img{
+        margin-bottom: 0px;
+        justify-content: flex-end;
+        width: 376px;
+    }
+}
+
+@media screen and (min-width: 1680px){
+    .hero-container__img{
+        margin-bottom: 0px;
+        justify-content: flex-end;
+        width: 842px;
+    }
+}
+
+.first-picture{
+    position: relative;
+    z-index: 2;
+}
+
+@media screen and (min-width: 768px){
+    .first-picture{
+        left: -18.38px;;
+    }
+}
+@media screen and (min-width: 1680px){
+    .first-picture{
+        left: -41.14px;
+    }
+}
+
+.second-picture{
+    position: absolute;
+    z-index: 1;
+    top: 9.52px;
+}
+
+@media screen and (min-width: 768px){
+    .second-picture{
+        top: 17.17px;
+    }
+}
+
+@media screen and (min-width: 1600px){
+    .second-picture{
+        top: 38.41px;       
+    }
+}
+
+
