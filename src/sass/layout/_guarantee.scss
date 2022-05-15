@@ -4,7 +4,7 @@
     font-size: 26px;
     line-height: 1.3;
     text-align: center;
-    letter-spacing: 0.03em;
+    letter-spacing: var(--letter-spacing-secondary);
     color: var(--color-primary);
     margin-bottom: 40px;
 }
@@ -23,7 +23,7 @@
     font-weight: 500;
     font-size: 12px;
     line-height: 1.67;
-    color: var(--color-reviews);
+    color: var(--color-rare);
 }
 
 .guarantee__description-color {
