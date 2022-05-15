@@ -39,7 +39,7 @@
 }
 
 .guarantee__list-item::before {
-    content: url('../../images/campfire.svg');
+    content: url('./../images/campfire.svg');
     position: absolute;
     display: inline-block;
     width: 15px;
