@@ -4,36 +4,32 @@
       Registration for a <span class="contacts__accent-color">free</span> phone 
       <span class="contacts__accent-color">consultation</span> on the nuances of English UPE
       </h2>
-      <p class="contacts__request">
-      Leave a request for participation in a  <span class="contacts__accent-color">free lesson</span>.
-      A consultant will contact you and answer your questions </p>
       <form class="contacts__form">
-        <label class="contacts__form-label">
+      <p class="contacts__request">
+      Leave a request for participation in a  <span class="contacts__accent-color">free lesson</span>. <br />
+      A consultant will contact you and answer your questions </p>
+      <div class="contacts__form-container">
           <input type="text" 
           class="contacts__form-input" 
           name="name" 
           placeholder="Name*" 
-          required  
           pattern="[A-Za-zА-Яа-я]"
-          minlength="2"/>
-        </label>
-        <label class="contacts__form-label">
+          required
+        />
           <input
             type="tel"
             class="contacts__form-input"
-            name="phone_number"
+            name="number"
             placeholder="Phone*"
-            required
             pattern="[\+]\d{3}\s[\(]\d{2}[\)]\s\d{3}[\-]\d{2}[\-]\d{2}"
-            minlength="10"
             maxlength="13"
+            required
           />
-          <span class="contacts__form-error">
-          Enter your phone number in the format (+380)98-000-10-01</span>
-        </label>
+        </div>
       </form>
-      <button type="submit" class="contacts__btn">
-        <span class="contacts__btn-text">i want a free lesson</span>
-      </button>
+      <div class="contacts__button-container">
+        <button class="contacts__btn" type="submit">I want a free lesson</button>
+      </div>
+
     </div>
   </section>

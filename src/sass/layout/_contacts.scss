@@ -1,0 +1,185 @@
+.contacts {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background-color: var(--background-dark-section);
+
+    background-image: linear-gradient(to bottom, rgba(17, 21, 24, 0.75), rgba(17, 21, 24, 0.75)), 
+    url('../images/contacts/contact-mobile.jpg');
+    background-size: cover;
+    background-position: center;
+
+    @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            background-image: linear-gradient(to bottom, rgba(17, 21, 24, 0.75), rgba(17, 21, 24, 0.75)), 
+            url('../images/contacts/contact-mobile2x.jpg');
+        }
+
+    @media screen and (min-width:768px) {
+        background-image: linear-gradient(to bottom, rgba(17, 21, 24, 0.75), rgba(17, 21, 24, 0.75)), 
+        url('../images/contacts/contact-tablet.jpg');
+
+        @media (min-device-pixel-ratio: 2),
+            (min-resolution: 192dpi),
+            (min-resolution: 2dppx) {
+                background-image: linear-gradient(to bottom, rgba(17, 21, 24, 0.75), rgba(17, 21, 24, 0.75)), 
+                url('../images/contacts/contact-tablet2x.jpg');
+            }
+        }
+
+    @media screen and (min-width:1680px) {
+        padding: 80px 0;
+        background-image: linear-gradient(to bottom, rgba(17, 21, 24, 0.75), rgba(17, 21, 24, 0.75)),  
+        url('../images/contacts/contact-desktop.jpg');
+
+        @media (min-device-pixel-ratio: 2),
+            (min-resolution: 192dpi),
+            (min-resolution: 2dppx) {
+                background-image: linear-gradient(to bottom, rgba(17, 21, 24, 0.75), rgba(17, 21, 24, 0.75)), 
+                url('../images/contacts/contact-desktop2x.jpg');
+            }
+        
+    }
+}
+.contacts__registration {
+    font-style: normal;
+    font-weight: 800;
+    font-size: 14px;
+    line-height: 18px;
+
+    text-align: center;
+    letter-spacing: 0.03em;
+    margin-bottom: 24px;
+    margin-right: auto;
+    margin-left: auto;
+    color: var(--color-blackout);
+
+    @media screen and (min-width: 768px) {
+        font-size: 26px;
+        line-height: 34px;
+        margin-bottom: 40px;
+
+    }
+    @media screen and (min-width: 1680px) {
+        max-width: 1090px;
+        font-size: 46px;
+        line-height: 60px;
+}
+}
+.contacts__accent-color {
+    color: var(--color-accent);
+}
+
+@media screen and (min-width:768px) {
+    .contacts__form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.contacts__request {
+    margin-bottom: 40px;
+    text-align: center;
+    color: var(--color-blackout);
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 15px;
+
+    @media screen and (min-width: 768px) {
+        font-style: normal;
+        font-size: 14px;
+        line-height: 17px; 
+    }
+        
+    @media screen and (min-width: 1680px) {
+        font-size: 30px;
+        line-height: 37px; 
+    }
+}
+
+.contacts__form-container {
+    margin-bottom: 40px;
+
+    @media screen and (min-width: 480px) {
+        text-align: center;
+}
+    @media screen and (min-width: 1680px) {
+    width: 528px;
+}
+}
+
+.contacts__form-input {
+    width: 100%;
+    padding-left: 28px;
+    min-height: 48px;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-blackout);
+    border: 1px solid var(--color-blackout);
+    background-color: transparent;
+    outline: none;
+    resize: none;
+
+
+    @media screen and (min-width: 480px) {
+        max-width: 335px;
+    }
+    @media screen and (min-width: 1680px) {
+        max-width: 528px;
+        min-height: 70px;
+    }
+}
+::placeholder {
+    color: var(--color-blackout);
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+
+    @media screen and (min-width: 1680px) {
+        font-size: 20px;
+        line-height: 24px;
+    }
+    .contacts__form-input:not(:placeholder-shown) {
+        border-color:var(--color-blackout);
+
+      }
+}
+    .contacts__form-input:not(:placeholder-shown):required:valid {
+        border-color:var(--color-blackout);
+    }
+    
+    .contacts__form-input:not(:placeholder-shown):required:invalid {
+        border-color: #ff0000;
+    }
+    .contacts__form-input:not(:last-child) {
+        margin-bottom: 20px;
+    }
+
+
+.contacts__button-container {
+    text-align: center;
+}
+.contacts__btn {
+    display: inline-block;
+    width: 100%;
+    min-height: 48px;
+    background-color: var(--color-accent);
+    color: var(--color-blackout);
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    border: none;
+    font-size: 14px;
+    line-height: 17px;
+    cursor: pointer;
+
+    @media screen and (min-width: 480px) {
+        max-width: 335px;
+        }
+    
+    @media screen and (min-width: 1680px) {
+        max-width: 528px;
+        min-height: 70px;
+        }
+}
