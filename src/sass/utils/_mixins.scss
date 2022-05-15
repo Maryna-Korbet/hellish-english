@@ -1,9 +1,28 @@
+@mixin font($fsize: false, $fweight: false, $lh: false, $color: false) {
+  font-family: 'Montserrat', sans-serif;
+  @if $fsize {
+    font-size: $fsize;
+  }
+
+  @if $fweight {
+    font-weight: $fweight;
+  }
+  @if $lh {
+    line-height: $lh;
+  }
+  @if $color {
+    color: $color;
+  }
+}
+
 ///--- для конопок нужно указать ширину в зависимости от секции ---///
 
 ///--- с оранжевым bg color ---///
 
-@mixin modal-btn_theme-dark() {
-  font-family: 'Montserrat';
+@mixin modal-btn_theme-dark($width) {
+  @if $width {
+    width: $width;
+  }
   font-weight: 700;
   font-size: 14px;
   line-height: 1.2;
@@ -23,8 +42,10 @@
 
 ///--- кнопка на белом фоне/прозрачная в моб меню ---///
 
-@mixin modal-btn__theme_light() {
-  font-family: 'Montserrat';
+@mixin modal-btn__theme_light($width) {
+  @if $width {
+    width: $width;
+  }
   font-weight: 700;
   font-size: 14px;
   line-height: 1.2;
@@ -46,54 +67,62 @@
 //-- h2 --//
 
 @mixin section-title() {
-  font-family: 'Montserrat';
   font-weight: 800;
-  font-size: 46px;
+  font-size: 20px;
   line-height: 1.3;
   letter-spacing: 0.03em;
   text-align: center;
   color: var(--background-dark-section);
 }
 
-//-- h2 для моб и планшетной версии--//
+//-- h2 для планшета--//
 
-// @media screen and (min-width: 768px) {
-//   .section-title {
-//     font-size: 20px;
-//     line-height: 1.3;
+// @media screen and (min-width: 768px) and (max-width: 1679px){
+//   .название вашей секции{
+//     font-size:26px;
+//   }
+// }
+
+//-- h2 для десктопа--//
+
+// @media screen and (min-width: 1680px) {
+//   .название вашей секции{
+//     font-size:46px;
 //   }
 // }
 
 //---серый текст внутри секции ---//
 
 @mixin section-subtitle_color-grey() {
-  font-family: 'Montserrat';
   font-style: normal;
   font-weight: 500;
-  font-size: 18px;
-  line-height: 1.5;
+  font-size: 12px;
+  line-height: 1.6;
   letter-spacing: 0.08em;
   color: var(--color-secondary);
 }
 
-//---черный текст внутри секции ---//
+//-- серый текст внутри секции для десктопа--//
 
-@mixin section-subtitle_color-black() {
-  font-family: 'Montserrat';
-  font-weight: 600;
-  font-size: 16px;
-  line-height: 1.2;
-  letter-spacing: 0.06em;
-  color: var(--color-primary);
-}
+// @media screen and (min-width: 1680px) {
+//   .название вашей секции{
+//     font-size: 18px;
+//   }
+// }
 
 //---заголовки по типу h3 внутри секции ---//
 
 @mixin section-headline() {
-  font-family: 'Montserrat';
   font-weight: 700;
-  font-size: 20px;
+  font-size: 14px;
   line-height: 1.4;
   letter-spacing: 0.08em;
-  color: var(--color-primary);
 }
+
+//---заголовки по типу h3 внутри секции для десктопа ---//
+
+// @media screen and (min-width: 1680px) {
+//   .название вашей секции{
+//     font-size: 20px;
+//   }
+// }
