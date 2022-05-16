@@ -1,3 +1,8 @@
+.features-company-section {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
 .features-company__icon-wrapper {
   height: 112px;
   display: flex;
@@ -130,6 +135,10 @@
     max-width: 528px;
     height: 492px;
     flex-basis: calc((100% - 90px) / 3);
+  }
+  .features-company-section {
+    padding-top: 80px;
+    padding-bottom: 80px;
   }
   .features-company__list {
     margin: -15px;
