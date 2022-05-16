@@ -1,6 +1,14 @@
 .container {
+  min-width: 320px;
+  width: 100vw;
   padding-left: 15px;
   padding-right: 15px;
+}
+//0px - 319px mobile
+@media screen and (max-width: 319px) {
+  .container {
+    overflow: auto;
+  }
 }
 //480+ mobile
 @media screen and (min-width: 480px) {
