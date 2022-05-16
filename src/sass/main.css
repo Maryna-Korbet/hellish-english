@@ -1,32 +1,32 @@
-@charset "UTF-8";
-/*
- * Главный файл стилей.
- * Все паршалы подключаются сюда.
- */
-.example {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  line-height: 1.5;
-  background-color: #fff;
-  color: #424242;
-  max-width: 960px;
-  padding: 16px;
+:root {
+  --font-family: 'Montserrat', sans-serif;
+  --color-accent: #ff6b09;
+  --color-blackout: #ffffff;
+  --color-primary: #111518;
+  --color-secondary: #b9b9b9;
+  --color-reviews: #3d3d3d;
+  --background-dark-section: #111518;
+  --background-light-section: #e5e5e5;
+  --background-guarantee-section: #f1f1f1;
+  --background-button: #ff6b09;
+  --latter-spacing-primary: 0.08em;
+  --latter-spacing-secondary: 0.08em;
+  --latter-guarantee-section: 0.06em;
+  --latter-button: 0.14em;
 }
 
-.example code {
-  font-family: monospace;
-  font-size: 16px;
-  font-weight: 700;
-  background-color: #009688;
-  color: #fff;
-  padding: 2px 6px;
-  border-radius: 2px;
-}
-
-.example .background {
-  height: 240px;
-  background-image: url("../images/demo.jpg");
-  background-size: cover;
-  background-position: center;
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+          clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 .list {
@@ -55,11 +55,6 @@ a {
 
 address {
   font-style: normal;
-}
-
-section {
-  padding-left: 16px;
-  padding-right: 16px;
 }
 
 h1,
@@ -110,20 +105,6 @@ button {
   text-align: center;
 }
 
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  white-space: nowrap;
-  -webkit-clip-path: inset(100%);
-          clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-}
-
 .container {
   padding-left: 15px;
   padding-right: 15px;
@@ -149,20 +130,90 @@ button {
   }
 }
 
-:root {
-  --font-family: 'Montserrat', sans-serif;
-  --color-accent: #ff6b09;
-  --color-blackout: #ffffff;
-  --color-primary: #111518;
-  --color-secondary: #b9b9b9;
-  --color-reviews: #3d3d3d;
-  --background-dark-section: #111518;
-  --background-light-section: #e5e5e5;
-  --background-guarantee-section: #f1f1f1;
-  --background-button: #ff6b09;
-  --latter-spacing-primary: 0.08em;
-  --latter-spacing-secondary: 0.08em;
-  --latter-guarantee-section: 0.06em;
-  --latter-button: 0.14em;
+.guarantee {
+  background-color: #fff;
+}
+
+.guarantee-title {
+  font-weight: 800;
+  font-size: 26px;
+  line-height: 130%;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #111518;
+  margin-bottom: 40px;
+}
+
+.guarantee__list {
+  padding: 40px 20px 40px 27px;
+  background-color: #F1F1F1;
+}
+
+.guarantee__list-item {
+  position: relative;
+  padding-left: 28px;
+}
+
+.guarantee__list-item-description {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.67;
+  color: #3D3D3D;
+}
+
+.guarantee__description-color {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.67;
+  color: #FF6B09;
+}
+
+.guarantee__list-item:not(:last-child) {
+  padding-bottom: 24px;
+  border-left: 1px dashed #B9B9B9;
+}
+
+.guarantee__list-item::before {
+  content: url("../../images/campfire.svg");
+  position: absolute;
+  display: inline-block;
+  width: 15px;
+  height: 20px;
+  fill: #FF6B09;
+  left: -8px;
+}
+
+@media screen and (min-width: 768px) {
+  .guarantee__list-item:not(:last-child) {
+    padding-bottom: 20px;
+  }
+  .guarantee__list {
+    padding: 32px 58px 32px 94px;
+  }
+  .guarantee__list-item {
+    padding-left: 32px;
+  }
+}
+
+@media screen and (min-width: 1680px) {
+  .guarantee-title {
+    font-size: 46px;
+  }
+  .guarantee__list {
+    padding: 60px 278px 60px 291px;
+  }
+  .guarantee__list-item-description {
+    font-size: 20px;
+    line-height: 1.4;
+  }
+  .guarantee__description-color {
+    font-size: 20px;
+    line-height: 1.4;
+  }
+  .guarantee__list-item::before {
+    width: 22px;
+    height: 30px;
+    left: -11px;
+  }
 }
 /*# sourceMappingURL=main.css.map */

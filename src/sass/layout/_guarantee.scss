@@ -1,0 +1,95 @@
+.guarantee {
+    padding-top: 40px;
+}
+
+.guarantee-title {
+    font-weight: 800;
+    font-size: 26px;
+    line-height: 1.3;
+    text-align: center;
+    letter-spacing: var(--letter-spacing-secondary);
+    color: var(--color-primary);
+    margin-bottom: 40px;
+}
+
+.guarantee__list {
+    padding: 40px 20px 40px 27px;
+    background-color: var(--background-guarantee-section);
+}
+
+.guarantee__list-item {
+    position: relative;
+    padding-left: 28px;
+}
+
+.guarantee__list-item-description {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.67;
+    color: var(--color-rare);
+}
+
+.guarantee__description-color {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.67;
+    color: var(--color-accent);
+}
+
+.guarantee__list-item:not(:last-child) {
+    padding-bottom: 24px;
+    border-left: 1px dashed var(--color-secondary);
+}
+
+.guarantee__list-item::before {
+    content: url('./../images/campfire.svg');
+    position: absolute;
+    display: inline-block;
+    width: 15px;
+    height: 20px;
+    fill: var(--color-accent);
+    left: -8px;
+}
+
+@media screen and (min-width: 768px) {
+    .guarantee__list-item:not(:last-child) {
+        padding-bottom: 20px;
+    }
+
+    .guarantee__list {
+        padding: 32px 58px 32px 94px;
+    }
+
+    .guarantee__list-item {
+        padding-left: 32px;
+    }
+}
+
+@media screen and (min-width: 1680px) {
+    .guarantee {
+        padding-top: 120px;
+    }
+    .guarantee-title {
+        font-size: 46px;
+    }
+
+    .guarantee__list {
+        padding: 60px 278px 60px 291px;
+    }
+
+    .guarantee__list-item-description {
+        font-size: 20px;
+        line-height: 1.4;
+    }
+
+    .guarantee__description-color {
+        font-size: 20px;
+        line-height: 1.4;
+    }
+
+    .guarantee__list-item::before {
+        width: 22px;
+        height: 30px;
+        left: -11px;
+    }
+}
