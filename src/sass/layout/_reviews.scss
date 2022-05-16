@@ -168,6 +168,8 @@
     .reviews {
         padding-top: 80px;
         padding-bottom: 80px;
+    }
+    .reviews__title {
         font-size: 46px;
     }
     .reviewer{
@@ -178,6 +180,7 @@
         font-size: 20px;
         margin-top: 60px;
         margin-bottom: 8px;
+        font-size: 30px;
     }
     .reviewer::before{
         left: -59px;
@@ -189,6 +192,12 @@
     }
     .reviewer__progress {
         margin-right: 111px;
+    }
+    .reviewer__education {
+        font-size: 14px;
+    }
+    .reviewer__review { 
+        font-size: 18px;
     }
     .reviewer__list-item:not(:last-child) {
         margin-right: 40px;
