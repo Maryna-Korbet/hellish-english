@@ -2,13 +2,13 @@
 
 @media screen and (max-width:767px){
     .hero {
-        background-image: url(../images/hero/background-mobile.png);
+        background-image: url(../images/hero/background-table.png);
         background-repeat: no-repeat;
         background-size: cover;
         background-color: #FFFFFF;
-        box-shadow: -5px 21px 26px rgba(0, 0, 0, 0.04);
+        background-position: -64px 0px;
         padding-top: 89px;
-        padding-bottom: 60px;
+        padding-bottom: 100px;
         max-width:1680px;
         margin: 0 auto;
         flex-grow: 1;
@@ -18,7 +18,7 @@
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
         .hero {
-            background-image: url(../images/hero/background-mobile@2x.png);
+            background-image: url(../images/hero/background-table@2x.png);
         }
     }
 }    
@@ -30,9 +30,8 @@
         background-size: cover;
         background-position: 50% 50%;
         background-color: #FFFFFF;
-        box-shadow: -5px 21px 26px rgba(0, 0, 0, 0.04);
         padding-top: 168px;
-        padding-bottom: 44px;
+        padding-bottom: 40px;
         max-width:1680px;
         margin: 0 auto;
         flex-grow: 1;
@@ -51,12 +50,11 @@
     .hero {
         background-image: url(../images/hero/background-desktop.png);
         background-color: #FFFFFF;
-        box-shadow: -5px 21px 26px rgba(0, 0, 0, 0.04);
         background-repeat: no-repeat;
         background-size: cover;
         background-position: 50% 50%;
         padding-top: 150px;
-        padding-bottom: 6px;
+        padding-bottom: 0px;
         max-width:1680px;
         margin: 0 auto;
         flex-grow: 1;
