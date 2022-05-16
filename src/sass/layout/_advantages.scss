@@ -1,6 +1,5 @@
 .advantages {
     box-sizing: border-box;
-    padding-top: 40px;
     padding-bottom: 40px;
     background-color: var(--color-blackout);
 }
@@ -9,7 +8,7 @@
 .advantages__second::before,
 .advantages__third::before {
     content: '';
-    width: 60px;
+    width: 62px;
     height: 62px;
     margin: 5px 12px 5px 0;
 }
@@ -81,7 +80,7 @@
 
 @media screen and (min-width:1680px) {
     .advantages{
-    padding-top: 58px;
+    padding-top: 18px;
     padding-bottom: 98px;
     padding-left: 98px;
     }
