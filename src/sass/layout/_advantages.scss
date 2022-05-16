@@ -1,0 +1,107 @@
+.advantages {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    box-sizing: border-box;
+}
+
+.advantages__first::before,
+.advantages__second::before,
+.advantages__third::before {
+    content: '';
+    width: 60px;
+    height: 62px;
+    margin: 5px 12px 5px 0;
+}
+
+.advantages__first::before {
+    background: url("../images/advantages/advantages1.svg") no-repeat;
+}
+
+.advantages__second::before {
+    background: url("../images/advantages/advantages2.svg") no-repeat;
+}
+
+.advantages__third::before {
+    background: url("../images/advantages/advantages3.svg") no-repeat;
+}
+
+.advantages__item:not(:last-child) {
+    margin-bottom: 24px;
+}
+
+.advantages__description {
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.65;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.08em;
+    color: var(--color-primary);
+    white-space: pre;
+}
+
+@media screen and (min-width:768px) {
+    .advantages {
+        padding-left: 40px;
+        padding-right: 40px;
+        padding-bottom: 80px;
+    }
+
+    .advantages__list {
+        display: flex;
+        justify-content: center;
+    }
+
+    .advantages__item:not(:last-child) {
+        margin-bottom: 0px;
+        margin-right: 21px;
+    }
+
+    .advantages__description {
+        position: relative;
+    }
+
+    .advantages__description:not(:first-of-type) {
+        display: block;
+        max-width: 80px;
+    }
+}
+
+@media screen and (min-width:1680px) {
+    .advantages {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .advantages__item {
+        width: 448px;
+    }
+
+    .advantages__description {
+        font-size: 20px;
+    }
+
+    .advantages__first::before,
+    .advantages__second::before,
+    .advantages__third::before {
+        position: absolute;
+        top: -16px;
+        left: -86px;
+        width: 102px;
+        height: 104px;
+        margin: 0;
+    }
+
+    .advantages__first::before {
+        background: url("../images/advantages/advantages-1.svg") no-repeat;
+    }
+
+    .advantages__second::before {
+        background: url("../images/advantages/advantages-2.svg") no-repeat;
+    }
+
+    .advantages__third::before {
+        background: url("../images/advantages/advantages-3.svg") no-repeat;
+    }
+}
