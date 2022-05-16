@@ -1,3 +1,6 @@
+.guarantee {
+    padding-top: 40px;
+}
 
 .guarantee-title {
     font-weight: 800;
@@ -63,6 +66,9 @@
 }
 
 @media screen and (min-width: 1680px) {
+    .guarantee {
+        padding-top: 120px;
+    }
     .guarantee-title {
         font-size: 46px;
     }
