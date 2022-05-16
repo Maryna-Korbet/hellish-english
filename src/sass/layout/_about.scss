@@ -1,0 +1,189 @@
+.about__section-name {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 130%;
+    letter-spacing: 0.03em;
+    color: var(--bold-text-color);
+    margin-bottom: 20px;
+}
+.about__img {
+    margin-bottom: 20px;
+}
+.about__name {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.08em;
+    color: var(--bold-text-color);
+    margin-bottom: 20px;
+    border-bottom: 1px solid rgba(185, 185, 185, 1);
+    padding-bottom: 8px;
+}
+
+.about__achievements {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 1.21;
+    letter-spacing: 0.06em;
+    color: var(--bold-text-color);
+    display: flex;
+}
+
+.about__text {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.66;
+    color: var(--color-secondary)
+}
+
+.about__link {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.66;
+    text-decoration-line: underline;
+    color: var(--color-accent);
+}
+
+.about__list_li::before {
+    content: '';
+    background-image: url(/images/Vector.svg);
+    position: relative;
+    float: left;
+    margin-right: 9px;
+    min-width: 18px;
+    height: 14px;
+}
+
+.about__list {
+    margin-bottom: 20px;
+
+}
+
+.about__list_li {
+    margin-bottom: 10px;
+}
+
+.about__text {
+    margin-bottom: 24px;
+}
+
+.about__svg {
+    margin-bottom: 8px;
+}
+.about__text_ds {
+    display: none;
+}
+
+.about__text_tb {
+    display: none;
+}
+// 768px +
+@media screen and (min-width: 768px) {
+    .about__div {
+        display: flex;
+    }
+
+    .about__img {
+        margin-right: 61px;
+    }
+
+    .about__list_li {
+        margin-bottom: 20px;
+    }
+
+    .about__text {
+        font-size: 10px;
+        line-height: 2;
+    }
+
+    .about__achievements {
+        font-size: 12px;
+        line-height: 1.25;
+    }
+
+    .about__text_ds {
+        display: none;
+    }
+
+    .about__text_mb {
+        display: none;
+    }
+
+    .about__text_tb {
+        display: block;
+    }
+
+    .about__content {
+        width: 401px;
+    }
+
+    .about__section-name {
+        font-size: 26px;
+        margin-bottom: 60px;
+    }
+}
+
+// 1680px +
+@media screen and (min-width: 1680px) {
+    .about__content {
+        width: 667px;
+    }
+
+    .about__img {
+        margin-right: 173px;
+        max-width: 528px;
+    }
+
+    .about__name {
+        padding-bottom: 16px;
+        margin-bottom: 32px;
+        font-size: 30px;
+        line-height: 1.23;
+    }
+
+    .about__text {
+        font-size: 18px;
+        line-height: 1.55;
+    }
+
+    .about__achievements {
+        font-size: 16px;
+        line-height: 1.25;
+    }
+
+    .about__list_li {
+        margin-bottom: 40px;
+    }
+
+    .about__link {
+        font-size: 18px;
+        line-height: 1.55;
+    }
+
+    .about__text_tb {
+        display: none;
+    }
+
+    .about__text_mb {
+        display: none;
+    }
+
+    .about__text_ds {
+        display: block;
+    }
+
+    .about__section-name {
+        font-size: 46px;
+        margin-bottom: 80px;
+    }
+}
