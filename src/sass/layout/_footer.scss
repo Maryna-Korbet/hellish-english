@@ -1,0 +1,136 @@
+.footer__white-section {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    text-align: center;
+  }
+  
+  .footer__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .footer__black-section {
+    padding-top: 24px;
+    padding-bottom: 24px;
+    text-align: center;
+    background-color: var(--background-dark-section);
+  }
+  
+  .phone-number {
+    display: flex;
+    align-items: center;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    color: var(--color-primary);
+  }
+  
+  .icon-phone {
+    margin-right: 8px;
+    width: 20px;
+    height: 19px;
+  }
+  
+  .social-link {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 20%;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    background-image: radial-gradient(110.28% 110.28% 
+    at 20.5% 87.39%, #FAE100 0%, #FADC04 5.44%, 
+    #FBCE0E 11.67%, #FCB720 18.29%, #FE9838 25.14%,
+    #FF7950 30.54%, #FF1C74 49.22%,
+    #6C1CD1 100%);
+   
+  }
+  
+  .footer__text {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 28px;
+    color:  #B9B9B9;
+  }
+  
+  @media screen and (max-width: 767px) {
+  
+    .logo-light {
+      margin-bottom: 20px;
+    }
+
+    .phone-number{
+      margin-bottom: 20px;
+    }
+  }
+ 
+  
+  @media screen and (min-width: 768px) {
+    .footer__white-section {
+      text-align: left;
+    }
+  
+    .footer__container {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+     .logo-light {
+        width: 128px;
+        height: 45px;
+    }
+
+    .footer__contacts {
+      display: flex;
+      align-items: center;
+    }
+    .icon-phone {
+        width: 24px;
+        height: 23px;
+     }
+
+    .phone-number {
+    font-size: 20px;
+    line-height: 24px;
+    padding-right: 24px;
+    margin-right: 24px;
+    height: 40px;
+    border-right: 1px solid #B9B9B9;
+    }
+  
+  }
+
+
+  @media screen and (min-width: 1680px) {
+    .footer__white-section {
+      padding-top: 84px;
+      padding-bottom: 82px;
+    }
+  
+    .footer__container {
+      justify-content: flex-start;
+    }
+  
+    .logo {
+      margin-right: 452px;
+    }
+  
+    .phone-number {
+        font-size: 30px;
+        line-height: 37px;
+    }
+  
+    .icon-phone {
+      margin-right: 16px;
+      width: 30px;
+      height: 29px;
+    }
+  
+    .footer__black-section{
+      padding-top: 26px;
+      padding-bottom: 27px;
+    }
+  }
