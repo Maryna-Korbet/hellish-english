@@ -1,11 +1,12 @@
 <header class="header">
-  <div class="container header-container">
-    <nav class="navigation">
-      <a href="./index.html" class="logo link">
-        <svg class="logo-light" width="80" height="29">
-          <use href="./images/sprite-icons.svg#logo-light"></use>
-        </svg>
-      </a>
+  <div class="header-container container">
+    <a href="./index.html" class="logo link">
+      <svg class="logo-light">
+        <use href="./images/sprite-icons.svg#logo-light"></use>
+      </svg>
+    </a>
+
+    <div class="header-nav">
       <ul class="nav-list list">
         <li class="nav-list__item">
           <a href="#studying" class="nav-list__link link">studying program</a>
@@ -20,15 +21,14 @@
           <a href="#information" class="nav-list__link link">contacts</a>
         </li>
       </ul>
+
       <div class="nav-button">
-        <button type="button" class="nav-button_item" data-modal-open>consultation by phone</button>
+        <button type="button" class="nav-button-item" data-modal-open>consultation by phone</button>
       </div>
-    </nav>
+    </div>
 
     <button type="button" class="mobile-menu-button" data-menu-open>
-      <svg class="mobile-menu-button__icon" width="20" height="12">
-        <use href="./images/sprite-icons.svg#burger-menu-btn"></use>
-      </svg>
+      <img src="./images/header/burger-menu.jpg" alt="menu" width="20" height="12" />
     </button>
 
     <div class="mobile-menu container" data-menu>
@@ -49,20 +49,19 @@
         <div class="mobile-nav">
           <ul class="mobile-nav-list list">
             <li class="mobile-nav-list__item">
-              <a href="#studying" class="mobile-nav-list__link link">Studying program</a>
+              <a href="#studying" class="mobile-nav-list__link link">studying program</a>
             </li>
             <li class="mobile-nav-list__item">
-              <a href="#about" class="mobile-nav-list__link link">About</a>
+              <a href="#about" class="mobile-nav-list__link link">about</a>
             </li>
             <li class="mobile-nav-list__item">
-              <a href="#options" class="mobile-nav-list__link link"> Training options</a>
+              <a href="#options" class="mobile-nav-list__link link">training options</a>
             </li>
             <li class="mobile-nav-list__item">
-              <a href="#information" class="mobile-nav-list__link link"> Contacts</a>
+              <a href="#information" class="mobile-nav-list__link link">contacts</a>
             </li>
           </ul>
-          <button type="button" class="mobile-button" data-modal-open>consultation by phone</button
-          >>
+          <button type="button" class="mobile-button" data-modal-open>consultation by phone</button>
         </div>
       </div>
     </div>
