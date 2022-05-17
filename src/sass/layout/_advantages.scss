@@ -1,14 +1,14 @@
 .advantages {
     box-sizing: border-box;
-    padding-top: 40px;
     padding-bottom: 40px;
+    background-color: var(--color-blackout);
 }
 
 .advantages__first::before,
 .advantages__second::before,
 .advantages__third::before {
     content: '';
-    width: 60px;
+    width: 62px;
     height: 62px;
     margin: 5px 12px 5px 0;
 }
@@ -79,11 +79,11 @@
 }
 
 @media screen and (min-width:1680px) {
-    .advantages {
-        padding-left: 16px;
-        padding-right: 16px;
+    .advantages{
+    padding-top: 18px;
+    padding-bottom: 98px;
+    padding-left: 98px;
     }
-
     .advantages__list {
         justify-content: flex-start;
     }
@@ -103,7 +103,7 @@
     .advantages__first::before,
     .advantages__second::before,
     .advantages__third::before {
-        left: -86px;
+        left: -82px;
         width: 102px;
         height: 104px;
         margin: 0;
