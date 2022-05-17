@@ -59,7 +59,7 @@
   
   @media screen and (max-width: 767px) {
   
-    .logo-light {
+    .footer__logo-light {
       margin-bottom: 20px;
     }
 
@@ -78,7 +78,7 @@
       flex-direction: row;
       justify-content: space-between;
     }
-     .logo-light {
+     .footer__logo-light {
         width: 128px;
         height: 45px;
     }
@@ -114,7 +114,7 @@
       justify-content: flex-start;
     }
   
-    .logo {
+    .footer__logo {
       margin-right: 452px;
     }
   
