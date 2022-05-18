@@ -11,5 +11,6 @@ refs.openModalBtn.forEach((el) => {
 refs.closeModalBtn.addEventListener("click", toggleModal);
 
 function toggleModal() {
+  console.log('11111 :>> ', 11111);
   refs.modal.classList.toggle("is-hidden");
 }
