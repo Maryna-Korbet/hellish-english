@@ -37,6 +37,7 @@
   &:hover,
   &:focus {
     fill: var(--color-accent);
+    border: var(--color-accent);
   }
 }
 .backdrop.is-hidden {
@@ -47,10 +48,10 @@
 }
 
 .contact-form__text {
-  font-size: 20px;
   font-weight: 700;
-  line-height: 1.15;
-  letter-spacing: var(--latter-spacing-mean);
+  font-size: 14px;
+  line-height: 1.2;
+  letter-spacing: 0.14em;
   text-align: center;
   color: var(--color-secondary);
   margin-bottom: 12px;
@@ -122,7 +123,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 30px;
+  margin-bottom: 10px;
 }
 .chackbox__label {
   display: flex;
@@ -171,8 +172,8 @@
   display: block;
   margin-left: auto;
   margin-right: auto;
-  height: 50px;
-  width: 200px;
+  height: 40px;
+  width: 150px;
   border-radius: 4px;
   background: var(--color-accent);
   font-family: var(--font-family-primary);
@@ -192,19 +193,31 @@
 .chackbox__color {
   color: var(--color-accent);
 }
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 767px) {
+  .modal {
+    display: none;
+  }
+}
+@media screen and (min-width: 768px) {
   .modal {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 400px;
-    height: 700px;
+    height: 550px;
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1680px) {
   .modal {
-    width: 700px;
-    height: 800px;
+    width: 800px;
+    height: 700px;
+  }
+  .modal__button {
+    height: 50px;
+    width: 200px;
+  }
+  .contact-form__text {
+    margin-bottom: 20px;
   }
 }
