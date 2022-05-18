@@ -110,6 +110,7 @@ button {
   width: 100vw;
   padding-left: 15px;
   padding-right: 15px;
+  overflow-x: none;
 }
 
 @media screen and (max-width: 319px) {
@@ -188,6 +189,7 @@ button {
 
 .btn-close:hover, .btn-close:focus {
   fill: var(--color-accent);
+  border: var(--color-accent);
 }
 
 .backdrop.is-hidden {
@@ -198,10 +200,10 @@ button {
 }
 
 .contact-form__text {
-  font-size: 20px;
   font-weight: 700;
-  line-height: 1.15;
-  letter-spacing: var(--latter-spacing-mean);
+  font-size: 14px;
+  line-height: 1.2;
+  letter-spacing: 0.14em;
   text-align: center;
   color: var(--color-secondary);
   margin-bottom: 12px;
@@ -321,7 +323,7 @@ button {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-bottom: 30px;
+  margin-bottom: 10px;
 }
 
 .chackbox__label {
@@ -380,8 +382,8 @@ button {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  height: 50px;
-  width: 200px;
+  height: 40px;
+  width: 150px;
   border-radius: 4px;
   background: var(--color-accent);
   font-family: var(--font-family-primary);
@@ -407,7 +409,13 @@ button {
   color: var(--color-accent);
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 767px) {
+  .modal {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) {
   .modal {
     position: absolute;
     top: 50%;
@@ -415,14 +423,21 @@ button {
     -webkit-transform: translate(-50%, -50%);
             transform: translate(-50%, -50%);
     width: 400px;
-    height: 700px;
+    height: 550px;
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1680px) {
   .modal {
-    width: 700px;
-    height: 800px;
+    width: 800px;
+    height: 700px;
+  }
+  .modal__button {
+    height: 50px;
+    width: 200px;
+  }
+  .contact-form__text {
+    margin-bottom: 20px;
   }
 }
 
@@ -710,7 +725,7 @@ button {
     background-image: url(../images/hero/background-table.png);
     background-repeat: no-repeat;
     background-size: cover;
-    background-color: #FFFFFF;
+    background-color: #ffffff;
     background-position: -64px 0px;
     padding-top: 89px;
     padding-bottom: 100px;
@@ -731,7 +746,7 @@ button {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 50% 50%;
-    background-color: #FFFFFF;
+    background-color: #ffffff;
     padding-top: 168px;
     padding-bottom: 40px;
     max-width: 1680px;
@@ -748,7 +763,7 @@ button {
 @media screen and (min-width: 1680px) {
   .hero {
     background-image: url(../images/hero/background-desktop.png);
-    background-color: #FFFFFF;
+    background-color: #ffffff;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 50% 50%;
@@ -792,7 +807,7 @@ button {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.57;
-  color: #B9B9B9;
+  color: #b9b9b9;
 }
 
 @media screen and (min-width: 1680px) {
@@ -841,7 +856,7 @@ button {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  color: #FF6B09;
+  color: #ff6b09;
 }
 
 @media screen and (min-width: 1680px) {
@@ -858,10 +873,9 @@ button {
   font-size: 12px;
   line-height: 1.25;
   text-transform: uppercase;
-  color: #FFFFFF;
+  color: #ffffff;
   text-align: center;
-  background-color: #FF6B09;
-  cursor: pointer;
+  background-color: #ff6b09;
   border: none;
   padding-top: 16px;
   padding-bottom: 16px;
@@ -941,6 +955,7 @@ button {
           justify-content: center;
   position: relative;
   min-height: 178px;
+  z-index: 0;
 }
 
 @media screen and (min-width: 768px) {
@@ -950,6 +965,7 @@ button {
         -ms-flex-pack: end;
             justify-content: flex-end;
     width: 376px;
+    z-index: 0;
   }
 }
 
@@ -960,6 +976,7 @@ button {
         -ms-flex-pack: end;
             justify-content: flex-end;
     width: 842px;
+    z-index: 0;
   }
 }
 
@@ -1532,7 +1549,7 @@ button {
   bottom: 0;
 }
 
-@media screen and (max-width: 1199px) {
+@media screen and (max-width: 1679px) {
   .program__wrapper-cont {
     position: relative;
     padding-left: 32px;
@@ -1574,7 +1591,7 @@ button {
   }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1199px) {
+@media screen and (min-width: 768px) and (max-width: 1679px) {
   .program__wrapper {
     margin-bottom: 204px;
   }
@@ -1624,7 +1641,7 @@ button {
   }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1680px) {
   .program {
     position: relative;
     padding: 80px 0px 70px 0px;
