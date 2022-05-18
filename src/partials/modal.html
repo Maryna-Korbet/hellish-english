@@ -1,0 +1,61 @@
+<div class="backdrop is-hidden" data-modal>
+  <div class="modal">
+    <button type="button" class="btn-close" data-modal-close>
+      <svg width="11" height="11">
+        <use href="./images/sprite-icons.svg#icon-close"></use>
+      </svg>
+    </button>
+    <form class="contact-form">
+      <p class="contact-form__text">Leave your details, we will call you back</p>
+      <label class="contact-form__field">
+        <span class="contact-form__name">Name</span>
+        <span class="contact-form__wrapper">
+          <input name="input-name" class="contact-form__input" type="text" required />
+          <svg class="contact-form__icon" width="18" height="18">
+            <use href="./images/sprite-icons.svg#icon-menu"></use>
+          </svg>
+        </span>
+      </label>
+      <label class="contact-form__field">
+        <span class="contact-form__name">Phone number</span>
+        <span class="contact-form__wrapper">
+          <input name="input-phone" class="contact-form__input" type="tel" required />
+          <svg class="contact-form__icon" width="18" height="18">
+            <use href="./images/sprite-icons.svg#icon-tel"></use>
+          </svg>
+        </span>
+      </label>
+      <label class="contact-form__field">
+        <span class="contact-form__name">Email</span>
+        <span class="contact-form__wrapper">
+          <input name="input-email" class="contact-form__input" type="email" />
+          <svg class="contact-form__icon" width="18" height="18">
+            <use href="./images/sprite-icons.svg#icon-email"></use>
+          </svg>
+        </span>
+      </label>
+      <label class="contact-form__field">
+        <span class="contact-form__name">Comment</span>
+        <textarea
+          name="input-message"
+          class="contact-form__message"
+          placeholder="Введите текст"
+        ></textarea>
+      </label>
+      <div class="chackbox">
+        <input
+          name="accept-policy"
+          class="chackbox__input"
+          type="checkbox"
+          id="accept-policy"
+          required
+        />
+        <label for="accept-policy" class="chackbox__label">
+          <span class="chackbox__text">I accept the terms of_</span>
+          <a class="chackbox__color" href=""> the contract</a>
+        </label>
+      </div>
+      <button type="submit" class="modal__button">Send</button>
+    </form>
+  </div>
+</div>
