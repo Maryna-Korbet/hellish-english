@@ -192,11 +192,11 @@
     cursor: pointer;
 
     @media screen and (min-width: 480px) {
-        max-width: 335px;
+        width: 335px;
         }
     
     @media screen and (min-width: 1680px) {
-        max-width: 528px;
+        width: 528px;
         min-height: 70px;
         }
 }

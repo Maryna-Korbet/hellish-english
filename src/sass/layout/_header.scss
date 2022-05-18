@@ -27,10 +27,13 @@
   cursor: pointer;
 }
 .mobile-menu-button {
+  border: none;
   background-color: transparent;
+}
+  
+  .icon-burger-menu {
   border: none;
   padding: 0;
-  line-height: 0;
   cursor: pointer;
 }
 
